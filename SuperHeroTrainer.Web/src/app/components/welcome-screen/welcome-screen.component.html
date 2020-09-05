@@ -1,0 +1,36 @@
+<div class="card mt-5">
+    <div class="card-header">
+      <h3>Welcome {{getUserName()}}!!</h3>
+    </div>
+
+      <div class="card-body">
+        <div class="card-title">
+          <h6>Welcome trainer, are you ready to train your heroes ?</h6>
+        </div>
+
+        <div class="card-body">
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Ability</th>
+                <th scope="col">Power</th>
+                <th scope="col">Suit Color</th>
+                <th scope="col">Train</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let hero of heroes | orderByPower;index as i">
+                <td> {{hero.name}} </td>
+                <td> {{hero.ability == 0 ? 'Attacker' : 'Defender'}} </td>
+                <td> {{hero.power | number:'1.2-2'}} </td>
+                <td> <div class="suit-color" [ngStyle]="{backgroundColor : hero.suitColor}"></div> </td>
+                <td> <button class="btn btn-primary" (click)="trainHero(hero)">Train</button> </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+

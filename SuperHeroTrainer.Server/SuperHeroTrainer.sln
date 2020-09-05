@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroTrainer", "SuperHeroTrainer.csproj", "{CF25DC0C-3D41-4ECF-A325-8C956A1CF791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroTrainer.Shared", "..\SuperHeroTrainer.Shared\SuperHeroTrainer.Shared.csproj", "{CABF7315-1276-454C-AE31-AE883F8D3C14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF25DC0C-3D41-4ECF-A325-8C956A1CF791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF25DC0C-3D41-4ECF-A325-8C956A1CF791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF25DC0C-3D41-4ECF-A325-8C956A1CF791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF25DC0C-3D41-4ECF-A325-8C956A1CF791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABF7315-1276-454C-AE31-AE883F8D3C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABF7315-1276-454C-AE31-AE883F8D3C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABF7315-1276-454C-AE31-AE883F8D3C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABF7315-1276-454C-AE31-AE883F8D3C14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91611E31-9EEE-4B3C-A63C-1F37554377AE}
+	EndGlobalSection
+EndGlobal
