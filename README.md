@@ -9,6 +9,7 @@
 1. Run "npm i" in the SuperHeroTrainer.Web project
 ```bash
  npm i
+```
 
 2. Config the appsettings.json in the SuperHeroTrainer project
 	
