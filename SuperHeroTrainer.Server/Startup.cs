@@ -24,6 +24,8 @@ using SuperHeroTrainer.Core.Identity;
 using SuperHeroTrainer.Models.DB;
 using Autofac;
 using SuperHeroTrainer.Core.EntityFramework;
+using Serilog;
+using SuperHeroTrainer.Helpers;
 
 namespace SuperHeroTrainer
 {
@@ -116,7 +118,8 @@ namespace SuperHeroTrainer
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            //app.UseMiddleware<ErrorLoggingMiddleware>();
+            app.UseSerilogRequestLogging(); 
             app.UseRouting();
             app.UseCors(CORS_POLICY);
             app.UseAuthentication();
